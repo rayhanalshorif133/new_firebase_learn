@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD with Supabase</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.4/dist/supabase.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Example with Supabase</h1>
+        <form id="crudForm">
+            <input type="text" id="name" placeholder="Item Name" required>
+            <textarea id="description" placeholder="Description" required></textarea>
+            <button type="submit">Add Item</button>
+        </form>
+        
+        <h2>Items List</h2>
+        <ul id="itemsList"></ul>
+        
+        <div id="editForm" style="display:none;">
+            <input type="text" id="editName" placeholder="Edit Item Name" required>
+            <textarea id="editDescription" placeholder="Edit Description" required></textarea>
+            <button id="updateButton">Update Item</button>
+        </div>
+    </div>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.47.10/dist/umd/supabase.min.js"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
